@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-width=device-width, initial-scale=1.0">
+    <title>Google Fun - Brain-Twisting Jokes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2e8b57;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .joke {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e0ffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Brain-Twisting Jokes</h1>
+<div class="joke">
+    <p>Why is the objective of golf to play the least amount of golf?</p>
+</div>
+<div class="joke">
+    <p>Isn’t the word ‘queue’ just the letter Q followed by four silent letters?</p>
+</div>
+<div class="joke">
+    <p>How did the person who invented the calendar know what day it was?</p>
+</div>
+<div class="joke">
+    <p>What would happen if Pinocchio said ‘My nose will grow now’?</p>
+</div>
+<div class="joke">
+    <p>If you try to fail, and succeed, which have you done?</p>
+</div>
+<div class="joke">
+    <p>If two mind readers read each other’s minds, whose mind are they reading?</p>
+</div>
+<div class="joke">
+    <p>Can you cry underwater?</p>
+</div>
+<div class="joke">
+    <p>Why do we call it "rush hour" when nothing moves?</p>
+</div>
+<div class="joke">
+    <p>Why do we park on driveways and drive on parkways?</p>
+</div>
+<div class="joke">
+    <p>If a word is misspelled in the dictionary, how would we ever know?</p>
+</div>
+<div class="joke">
+    <p>If a turtle doesn’t have a shell, is it homeless or naked?</p>
+</div>
+<div class="joke">
+    <p>What if the Hokey Pokey really is what it’s all about?</p>
+</div>
+<div class="joke">
+    <p>Do you need a silencer if you are going to shoot a mime?</p>
+</div>
+
+<h2 class="thanks-message">Is your brain hurting yet? See you next time!
+
+<p><a href="google_fun.html">Back to Google Fun</a></p></h2>
+
+</body>
+</html>
