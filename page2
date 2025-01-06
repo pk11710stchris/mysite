@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Fun - Brain-Twisting Jokes</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -36,6 +37,11 @@
             background-color: #e0ffff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thanks-message {
+            margin-top: 20px;
+            font-style: italic;
         }
     </style>
 </head>
@@ -82,9 +88,8 @@
     <p>Do you need a silencer if you are going to shoot a mime?</p>
 </div>
 
-<h2 class="thanks-message">Is your brain hurting yet? See you next time!
-
-<p><a href="google_fun.html">Back to Google Fun</a></p></h2>
+<h2 class="thanks-message">Is your brain hurting yet? See you next time!</h2>
+<p><a href="google_fun.html">Back to Google Fun</a></p>
 
 </body>
 </html>
