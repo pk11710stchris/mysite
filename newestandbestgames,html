@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fun - Newest and Best Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2e8b57;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .game {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e0ffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Newest and Best Games</h1>
+
+<div class="game">
+    <h2>Kour.io</h2>
+    <p>
+        Kour.io is an action-packed shooting game that offers a variety of skins and weapons to earn.
+        Similar to Fortnite, players engage in intense battles while progressing through ranks like gold and silver.
+        The game is known for its strategic gameplay and vibrant community.
+    </p>
+</div>
+
+<div class="game">
+    <h2>PUBG (PlayerUnknown's Battlegrounds)</h2>
+    <p>
+        PUBG is a player versus player shooter game in which up to one hundred players fight in a battle royale,
+        a large-scale last man standing deathmatch. Players can choose to enter the match solo, duo, or with a small team
+        of up to four people, fighting to remain the last alive.
+    </p>
+</div>
+
+<div class="game">
+    <h2>Grand Theft Auto Online</h2>
+    <p>
+        Developed in tandem with Grand Theft Auto V, Grand Theft Auto Online was conceived as a separate experience
+        to be played in a continually evolving world. Up to 30 players freely roam across a re-creation of the single-player
+        world and enter lobbies to complete jobs, which are story-driven competitive and cooperative modes.
+    </p>
+</div>
+
+<div class="game">
+    <h2>Call of Duty</h2>
+    <p>
+        Call of Duty is the world-renowned first-person shooter (FPS) franchise that has entertained players for decades.
+        Whether you're a newcomer to the world of Call of Duty, or a long-serving veteran, there's a diversity of experiences
+        available that cater to a variety of tastes and abilities.
+    </p>
+</div>
+
+<div class="game">
+    <h2>Minecraft</h2>
+    <p>
+        Minecraft is a sandbox game that allows players to explore a blocky, procedurally generated 3D world,
+        and discover and extract raw materials, craft tools and items, and build structures or earthworks.
+        Players can either cooperate or compete in multiplayer mode, or choose survival or creative mode for their adventures.
+    </p>
+</div>
+
+<div class="game">
+    <h2>Roblox</h2>
+    <p>
+        Roblox is an online platform and storefront where users go to play games. 
+        Roblox is not a game, but a place where people play games made by other developers. 
+        What makes Roblox different from anything else in the games industry is that all the games are made by its users.
+    </p>
+</div>
+
+<div class="game">
+    <h2>Fortnite</h2>
+    <p>
+        Fortnite is a popular online video game developed by Epic Games. It comes in three distinct game mode versions: 
+        Fortnite: Save the World, a cooperative shooter-survival game for up to four players; 
+        Fortnite Battle Royale, a free-to-play battle royale game; and Fortnite Creative, where players can create worlds and battle arenas.
+    </p>
+</div>
+
+<h2 class="thanks-message">Check out these games and have fun!</h2>
+
+<p><a href="google_fun.html">Back to Google Fun</a></p>
+
+</body>
+</html>
