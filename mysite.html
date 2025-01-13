@@ -10,9 +10,38 @@
             font-family: 'Poppins', sans-serif;
             background-color: #f0f8ff;
             color: #333;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+
+        .header-bar {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-bar .logo img {
+            height: 50px; /* Increased size */
+        }
+
+        .header-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .header-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-top: 80px;
         }
 
         h1 {
@@ -20,56 +49,133 @@
             font-weight: 600;
         }
 
-        p {
-            font-size: 1.1em;
+        .description {
             color: #555;
-            margin-top: 10px;
-        }
-
-        .thanks-message {
-            font-style: italic;
-            font-size: 1.3em;
-            color: #666;
+            font-size: 1.1em;
             margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        img {
-            max-width: 80%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            color: #5f6368;
+            font-size: 0.9em;
+            padding: 10px 0;
         }
 
-        a {
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #1a73e8;
             text-decoration: none;
-            color: #2e8b57;
-            font-weight: bold;
-            border: 2px solid #2e8b57;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin: 10px;
         }
 
-        a:hover {
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .game {
+            margin-top: 30px;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
             background-color: #2e8b57;
-            color: #fff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #256b47;
         }
     </style>
 </head>
 <body>
 
-<h1>Hello, Welcome to Google Fun!</h1>
-<p>This is all about the best new games and lots of jokes to make you laugh.</p>
-<p>I hope you enjoy, and please share this website so I can become as rich as Jeff Bezos and look like this cool cat.</p>
-<img src="https://thumbs.dreamstime.com/b/adorable-cat-wearing-sparkling-glasses-trendy-cap-multiple-gold-chains-surrounded-warm-bokeh-lights-exuding-fun-stylish-331327803.jpg" alt="A cool cat wearing sparkling glasses, a trendy cap, and multiple gold chains, surrounded by warm bokeh lights."> <br>
+<div class="header-bar">
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+    </div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Help</a>
+        <a href="#">About the Creator</a>
+    </div>
+</div>
 
-<p>
-    <a href="brain_twisting_jokes.html">Go to Brain-Twisting Jokes</a>
-    <a href="best_games.html">Go to Best Games</a>
-</p>
+<div class="main-content">
+    <h1>Welcome to Google Fun!</h1>
+    <p class="description">This is your go-to place for the best games, <a href="#">brain-twisting jokes</a>, and a lot more fun content! Enjoy exploring and have a great time!</p>
+    
+    <div class="game">
+        <h2>Number Guessing Game</h2>
+        <p>Guess a number between 1 and 10! <a href="#">Learn more</a></p>
+        <input type="number" id="guess" min="1" max="10" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Guess</button>
+        <p id="feedback"></p>
+    </div>
+</div>
 
-<h2 class="thanks-message">Thanks for visiting! Hope you're having fun!</h2>
+<footer>
+    <p>Made with <span style="color: red;">❤️</span> by Google Fun</p>
+    <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    function checkGuess() {
+        const guess = document.getElementById('guess').value;
+        const feedback = document.getElementById('feedback');
+
+        if (guess == randomNumber) {
+            feedback.textContent = "Congratulations! You guessed the correct number!";
+            confetti();
+            playFanfare();
+        } else if (guess > randomNumber) {
+            feedback.textContent = "Too high! Try again.";
+        } else if (guess < randomNumber) {
+            feedback.textContent = "Too low! Try again.";
+        } else {
+            feedback.textContent = "Please enter a number between 1 and 10.";
+        }
+    }
+
+    function confetti() {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    }
+
+    function playFanfare() {
+        const audio = new Audio('https://www.soundjay.com/misc/sounds/fanfare-01.mp3');
+        audio.play();
+    }
+</script>
 
 </body>
 </html>
