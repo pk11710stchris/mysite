@@ -26,7 +26,7 @@
         }
 
         .header-bar .logo img {
-            height: 50px; /* Increased size */
+            height: 50px;
         }
 
         .header-bar a {
@@ -58,6 +58,28 @@
             margin-right: auto;
         }
 
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .styled-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #2e8b57;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .styled-button:hover {
+            background-color: #256b47;
+        }
+
         footer {
             position: fixed;
             bottom: 10px;
@@ -80,35 +102,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        .game {
-            margin-top: 30px;
-            border: 2px solid #2e8b57;
-            border-radius: 10px;
-            padding: 20px;
-            display: inline-block;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        input[type="number"] {
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1em;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #2e8b57;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #256b47;
-        }
     </style>
 </head>
 <body>
@@ -128,12 +121,9 @@
     <h1>Welcome to Google Fun!</h1>
     <p class="description">This is your go-to place for the best games, <a href="#">brain-twisting jokes</a>, and a lot more fun content! Enjoy exploring and have a great time!</p>
     
-    <div class="game">
-        <h2>Number Guessing Game</h2>
-        <p>Guess a number between 1 and 10! <a href="#">Learn more</a></p>
-        <input type="number" id="guess" min="1" max="10" placeholder="Enter your guess">
-        <button onclick="checkGuess()">Guess</button>
-        <p id="feedback"></p>
+    <div class="button-container">
+        <a href="#" class="styled-button">Funny Jokes</a>
+        <a href="#" class="styled-button">Best Games</a>
     </div>
 </div>
 
@@ -141,41 +131,6 @@
     <p>Made with <span style="color: red;">❤️</span> by Google Fun</p>
     <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-    let randomNumber = Math.floor(Math.random() * 10) + 1;
-
-    function checkGuess() {
-        const guess = document.getElementById('guess').value;
-        const feedback = document.getElementById('feedback');
-
-        if (guess == randomNumber) {
-            feedback.textContent = "Congratulations! You guessed the correct number!";
-            confetti();
-            playFanfare();
-        } else if (guess > randomNumber) {
-            feedback.textContent = "Too high! Try again.";
-        } else if (guess < randomNumber) {
-            feedback.textContent = "Too low! Try again.";
-        } else {
-            feedback.textContent = "Please enter a number between 1 and 10.";
-        }
-    }
-
-    function confetti() {
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-        });
-    }
-
-    function playFanfare() {
-        const audio = new Audio('https://www.soundjay.com/misc/sounds/fanfare-01.mp3');
-        audio.play();
-    }
-</script>
 
 </body>
 </html>
