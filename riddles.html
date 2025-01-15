@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impossible Riddles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header-bar {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-bar .logo img {
+            height: 60px;
+        }
+
+        .header-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .header-bar a:hover {
+            color: #ddd;
+        }
+
+        .main-content {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2e8b57;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .riddle {
+            background-color: #ffffff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .riddle:hover {
+            background-color: #f0f8ff;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #f0f8ff;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-bar">
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="#">Help</a>
+        <a href="#">About the Creator</a>
+    </div>
+</div>
+
+<div class="main-content">
+    <h1>Impossible Riddles</h1>
+    <p class="description">Can you solve these impossible riddles? Click on a riddle to reveal the answer!</p>
+    
+    <div class="riddle" onclick="toggleAnswer(this)">
+        <p><strong>Riddle 1:</strong> What has keys but can't open locks?</p>
+        <p class="answer">A piano.</p>
+    </div>
+    
+    <div class="riddle" onclick="toggleAnswer(this)">
+        <p><strong>Riddle 2:</strong> The more you take, the more you leave behind. What am I?</p>
+        <p class="answer">Footsteps.</p>
+    </div>
+
+    <div class="riddle" onclick="toggleAnswer(this)">
+        <p><strong>Riddle 3:</strong> What comes once in a minute, twice in a moment, but never in a thousand years?</p>
+        <p class="answer">The letter "M".</p>
+    </div>
+
+    <div class="riddle" onclick="toggleAnswer(this)">
+        <p><strong>Riddle 4:</strong> I am not alive, but I can grow. I don’t have lungs, but I need air. What am I?</p>
+        <p class="answer">Fire.</p>
+    </div>
+
+    <div class="riddle" onclick="toggleAnswer(this)">
+        <p><strong>Riddle 5:</strong> What is always in front of you but can’t be seen?</p>
+        <p class="answer">The future.</p>
+    </div>
+</div>
+
+<footer>
+    <!-- Footer content removed -->
+</footer>
+
+<script>
+    function toggleAnswer(riddle) {
+        var answer = riddle.querySelector('.answer');
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
